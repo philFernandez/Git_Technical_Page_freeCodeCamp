@@ -1,0 +1,27 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0.8rem 0 0 0;
+  color: #707070;
+  font-family: sans-serif;
+}
+
+.hamburger {
+  background-color: #707070;
+  margin: 0.6rem 0.6rem 0.6rem 2rem;
+  width: 3.5rem;
+  height: 0.5rem;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  font-size: 2rem;
+  margin: auto;
+  padding-right: 6.1rem;
+}
