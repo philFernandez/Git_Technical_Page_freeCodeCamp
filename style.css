@@ -35,6 +35,7 @@
   }
 
   #mobile-nav {
+    position: absolute;
     background-color: #707070;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
