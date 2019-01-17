@@ -2,7 +2,8 @@ function expandHamburger(e) {
   // get the div which hold the links
   let mobileNav = document.getElementById("mobile-nav");
   // get the links themselves
-  let links = document.getElementsByTagName("a");
+  // let links = document.getElementsByTagName("a");
+  let links = document.getElementsByClassName("nav-link");
 
   // if the navigation menu is already being shown, then hide it
   if (mobileNav.style.width == "97.5vw") {

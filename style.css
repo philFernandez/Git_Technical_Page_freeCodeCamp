@@ -58,7 +58,7 @@
     transition: all 0.1s;
   }
 
-  a {
+  a.nav-link {
     display: none;
     color: white;
     text-decoration: none;
@@ -67,7 +67,7 @@
     -webkit-tap-highlight-color: green;
   }
 
-  a:nth-child(1) {
+  a.nav-link:nth-child(1) {
     margin-top: 0;
     padding-top: 3.6rem;
   }
