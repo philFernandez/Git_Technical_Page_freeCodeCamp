@@ -3,6 +3,14 @@
     font-size: 10px;
   }
 
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
   body {
     margin: 0.8rem 0 0 0;
     color: #707070;
@@ -10,7 +18,7 @@
   }
 
   #hamburger-container {
-    padding-top: 0.6rem;
+    padding-top: 0.8rem;
   }
 
   .hamburger-item {
@@ -26,7 +34,6 @@
   }
 
   header#nav-header {
-    font-size: 1.4rem;
     margin: auto;
     padding-right: 6.1rem;
   }
