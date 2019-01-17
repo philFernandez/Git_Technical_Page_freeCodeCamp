@@ -142,6 +142,77 @@
       </section>
       <section class="main-section" id="basic_git_commands">
         <header><h2>Basic Git commands</h2></header>
+        <p>
+          To use Git, developers use specific commands to copy, create, change,
+          and combine code. These commands can be executed directly from the
+          command line or by using an application like
+          <a href="https://desktop.github.com/" target="_blank">
+            GitHub Desktop
+          </a>
+          or Git Kraken. Here are some common commands for using Git:
+        </p>
+        <ul>
+          <li>
+            <code>git init</code>
+            initializes a brand new Git repository and begins tracking an
+            existing directory. It adds a hidden subfolder within the existing
+            directory that houses the internal data structure required for
+            version control.
+          </li>
+          <li>
+            <code>git clone</code>
+            creates a local copy of a project that already exists remotely. The
+            clone includes all the project’s files, history, and branches.
+          </li>
+          <li>
+            <code>git add</code>
+            stages a change. Git tracks changes to a developer’s codebase, but
+            it’s necessary to stage and take a snapshot of the changes to
+            include them in the project’s history. This command performs
+            staging, the first part of that two-step process. Any changes that
+            are staged will become a part of the next snapshot and a part of the
+            project’s history. Staging and committing separately gives
+            developers complete control over the history of their project
+            without changing how they code and work.
+          </li>
+          <li>
+            <code>git commit</code>
+            saves the snapshot to the project history and completes the
+            change-tracking process. In short, a commit functions like taking a
+            photo. Anything that’s been staged with
+            <code>git add</code>
+            will become part of the snapshot with
+            <code>git commit</code>
+            .
+          </li>
+          <li>
+            <code>git status</code>
+            shows the status of changes as untracked, modified, or staged.
+          </li>
+          <li>
+            <code>git branch</code>
+            shows the branches being worked on locally.
+          </li>
+          <li>
+            <code>git merge</code>
+            merges lines of development together. This command is typically used
+            to combine changes made on two distinct branches. For example, a
+            developer would merge when they want to combine changes from a
+            feature branch into the master branch for deployment.
+          </li>
+          <li>
+            <code>git pull</code>
+            updates the local line of development with updates from its remote
+            counterpart. Developers use this command if a teammate has made
+            commits to a branch on a remote, and they would like to reflect
+            those changes in their local environment.
+          </li>
+          <li>
+            <code>git push</code>
+            updates the remote repository with any commits made locally to a
+            branch.
+          </li>
+        </ul>
       </section>
       <section class="main-section" id="how_github_fits_in">
         <header><h2>How GitHub fits in</h2></header>
