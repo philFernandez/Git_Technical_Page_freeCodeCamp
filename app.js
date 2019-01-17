@@ -2,7 +2,7 @@ function expandHamburger(e) {
   let mobileNav = document.getElementById("mobile-nav");
   let links = document.getElementsByTagName("a");
 
-  if (mobileNav.style.width == "75%") {
+  if (mobileNav.style.width == "100vw") {
     for (link of links) {
       link.style.display = "none";
     }
@@ -11,6 +11,6 @@ function expandHamburger(e) {
     for (link of links) {
       link.style.display = "block";
     }
-    mobileNav.style.cssText = "width: 75%; height: 560px;";
+    mobileNav.style.cssText = "width: 100vw; height: 560px;";
   }
 }
