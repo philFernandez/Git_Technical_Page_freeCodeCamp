@@ -42,8 +42,8 @@
     position: absolute;
     top: -0.1rem;
     background-color: #707070;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
     margin: 0 auto;
     width: 0;
     height: 0;
@@ -55,13 +55,13 @@
     display: none;
     color: white;
     text-decoration: none;
-    font-size: 14px;
-    margin: 36px 0 36px 0;
+    font-size: 1.4rem;
+    margin: 3.6rem 0 3.6rem 0;
     -webkit-tap-highlight-color: green;
   }
 
   a:nth-child(1) {
     margin-top: 0;
-    padding-top: 36px;
+    padding-top: 3.6rem;
   }
 }

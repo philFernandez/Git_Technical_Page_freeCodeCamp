@@ -17,6 +17,6 @@ function expandHamburger(e) {
       link.style.display = "block";
     }
     mobileNav.style.cssText =
-      "width: 97.5vw; height: 560px; border: 5px solid black;";
+      "width: 97.5vw; height: 56rem; border: 0.5rem solid black;";
   }
 }
