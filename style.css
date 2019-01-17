@@ -32,3 +32,11 @@ header {
   background-color: #707070;
   margin-top: 0.6rem;
 }
+
+#mobile-nav {
+  background-color: grey;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  transition: all 0.3s;
+}
