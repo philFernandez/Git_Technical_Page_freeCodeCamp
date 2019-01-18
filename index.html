@@ -11,8 +11,7 @@
     <!-- start of nav ----------------------------------------------- -->
     <nav id="navbar" onclick="expandHamburger(this)">
       <div id="hamburger-container">
-        <div class="hamburger-item"></div>
-        <div class="hamburger-item"></div>
+        <div class="hamburger-item"></div> <div class="hamburger-item"></div>
         <div class="hamburger-item"></div>
       </div>
       <header id="nav-header"><h1>Git Documentation</h1></header>
@@ -153,64 +152,56 @@
         </p>
         <ul>
           <li>
-            <code>git init</code>
-            initializes a brand new Git repository and begins tracking an
-            existing directory. It adds a hidden subfolder within the existing
-            directory that houses the internal data structure required for
-            version control.
+            <code>git init</code> initializes a brand new Git repository and
+            begins tracking an existing directory. It adds a hidden subfolder
+            within the existing directory that houses the internal data
+            structure required for version control.
           </li>
           <li>
-            <code>git clone</code>
-            creates a local copy of a project that already exists remotely. The
-            clone includes all the project’s files, history, and branches.
+            <code>git clone</code> creates a local copy of a project that
+            already exists remotely. The clone includes all the project’s files,
+            history, and branches.
           </li>
           <li>
-            <code>git add</code>
-            stages a change. Git tracks changes to a developer’s codebase, but
-            it’s necessary to stage and take a snapshot of the changes to
-            include them in the project’s history. This command performs
-            staging, the first part of that two-step process. Any changes that
-            are staged will become a part of the next snapshot and a part of the
-            project’s history. Staging and committing separately gives
-            developers complete control over the history of their project
-            without changing how they code and work.
+            <code>git add</code> stages a change. Git tracks changes to a
+            developer’s codebase, but it’s necessary to stage and take a
+            snapshot of the changes to include them in the project’s history.
+            This command performs staging, the first part of that two-step
+            process. Any changes that are staged will become a part of the next
+            snapshot and a part of the project’s history. Staging and committing
+            separately gives developers complete control over the history of
+            their project without changing how they code and work.
           </li>
           <li>
-            <code>git commit</code>
-            saves the snapshot to the project history and completes the
-            change-tracking process. In short, a commit functions like taking a
-            photo. Anything that’s been staged with
-            <code>git add</code>
-            will become part of the snapshot with
-            <code>git commit</code>
-            .
+            <code>git commit</code> saves the snapshot to the project history
+            and completes the change-tracking process. In short, a commit
+            functions like taking a photo. Anything that’s been staged with
+            <code>git add</code> will become part of the snapshot with
+            <code>git commit</code> .
           </li>
           <li>
-            <code>git status</code>
-            shows the status of changes as untracked, modified, or staged.
+            <code>git status</code> shows the status of changes as untracked,
+            modified, or staged.
           </li>
           <li>
-            <code>git branch</code>
-            shows the branches being worked on locally.
+            <code>git branch</code> shows the branches being worked on locally.
           </li>
           <li>
-            <code>git merge</code>
-            merges lines of development together. This command is typically used
-            to combine changes made on two distinct branches. For example, a
-            developer would merge when they want to combine changes from a
-            feature branch into the master branch for deployment.
+            <code>git merge</code> merges lines of development together. This
+            command is typically used to combine changes made on two distinct
+            branches. For example, a developer would merge when they want to
+            combine changes from a feature branch into the master branch for
+            deployment.
           </li>
           <li>
-            <code>git pull</code>
-            updates the local line of development with updates from its remote
-            counterpart. Developers use this command if a teammate has made
-            commits to a branch on a remote, and they would like to reflect
-            those changes in their local environment.
+            <code>git pull</code> updates the local line of development with
+            updates from its remote counterpart. Developers use this command if
+            a teammate has made commits to a branch on a remote, and they would
+            like to reflect those changes in their local environment.
           </li>
           <li>
-            <code>git push</code>
-            updates the remote repository with any commits made locally to a
-            branch.
+            <code>git push</code> updates the remote repository with any commits
+            made locally to a branch.
           </li>
         </ul>
         <p>
@@ -257,40 +248,35 @@
         </p>
         <ol>
           <li>
-            <b>Create a branch:</b>
-            Topic branches created from the canonical deployment branch (usually
-            <code>master</code>
-            ) allow teams to contribute to many parallel efforts. Short-lived
-            topic branches, in particular, keep teams focused and results in
-            quick ships.
+            <b>Create a branch:</b> Topic branches created from the canonical
+            deployment branch (usually <code>master</code> ) allow teams to
+            contribute to many parallel efforts. Short-lived topic branches, in
+            particular, keep teams focused and results in quick ships.
           </li>
           <li>
-            <b>Add commits:</b>
-            Snapshots of development efforts within a branch create safe,
-            revertible points in the project's history.
+            <b>Add commits:</b> Snapshots of development efforts within a branch
+            create safe, revertible points in the project's history.
           </li>
           <li>
-            <b>Open a pull request:</b>
-            Pull requests publicize a project’s ongoing efforts and set the tone
-            for a transparent development process.
+            <b>Open a pull request:</b> Pull requests publicize a project’s
+            ongoing efforts and set the tone for a transparent development
+            process.
           </li>
           <li>
-            <b>Discuss and review code:</b>
-            Teams participate in code reviews by commenting, testing, and
-            reviewing open pull requests. Code review is at the core of an open
-            and participatory culture.
+            <b>Discuss and review code:</b> Teams participate in code reviews by
+            commenting, testing, and reviewing open pull requests. Code review
+            is at the core of an open and participatory culture.
           </li>
           <li>
-            <b>Merge:</b>
-            Upon clicking merge, GitHub automatically performs the equivalent of
-            a local ‘git merge’ operation. GitHub also keeps the entire branch
-            development history on the merged pull request.
+            <b>Merge:</b> Upon clicking merge, GitHub automatically performs the
+            equivalent of a local ‘git merge’ operation. GitHub also keeps the
+            entire branch development history on the merged pull request.
           </li>
           <li>
-            <b>Deploy:</b>
-            Teams can choose the best release cycles or incorporate continuous
-            integration tools and operate with the assurance that code on the
-            deployment branch has gone through a robust workflow.
+            <b>Deploy:</b> Teams can choose the best release cycles or
+            incorporate continuous integration tools and operate with the
+            assurance that code on the deployment branch has gone through a
+            robust workflow.
           </li>
         </ol>
       </section>
@@ -312,32 +298,27 @@
         <code>
           <div class="code-container">
             <p style="font-size: 1.2rem;">
-              # download a repository on GitHub.com to our machine
-              <br />
+              # download a repository on GitHub.com to our machine <br />
               git clone https://github.com/me/repo.git
             </p>
             <p style="font-size: 1.2rem;">
-              # change into the repo directory
-              <br />
+              # change into the repo directory <br />
               cd repo
             </p>
             <p style="font-size: 1.2rem;">
-              # create a new branch to store any new changes
-              <br />
+              # create a new branch to store any new changes <br />
               git branch my-branch
             </p>
             <p style="font-size: 1.2rem;">
-              # switch to that branch (line of develpment)
-              <br />
+              # switch to that branch (line of develpment) <br />
+
               git checkout my-branch
             </p>
             <p style="font-size: 1.2rem;">
-              # make changes (ex: edit file1.md and file2.md with editor)
-              <br />
+              # make changes (ex: edit file1.md and file2.md with editor) <br />
             </p>
             <p style="font-size: 1.2rem;">
-              # stage the changed files
-              <br />
+              # stage the changed files <br />
               git add file1.md file2.md
             </p>
             <p style="font-size: 1.2rem;">
@@ -346,8 +327,7 @@
               git commit -m "commit msg"
             </p>
             <p style="font-size: 1.2rem;">
-              # push changes to github
-              <br />
+              # push changes to github <br />
               git push --set-upstream origin my-branch
             </p>
           </div>
@@ -363,38 +343,31 @@
           <div class="code-container">
             <p style="font-size: 1.2rem;">
               # create a new directory, and initialize it with git-specific
-              functions
-              <br />
+              functions <br />
               git init my-repo
             </p>
             <p style="font-size: 1.2rem;">
-              # change into the my-repo directory
-              <br />
+              # change into the my-repo directory <br />
               cd my-repo
             </p>
             <p style="font-size: 1.2rem;">
-              # create the first file in the project
-              <br />
+              # create the first file in the project <br />
               touch README.md
             </p>
             <p style="font-size: 1.2rem;">
-              # git isn't aware of the file, stage it
-              <br />
+              # git isn't aware of the file, stage it <br />
               git add README.md
             </p>
             <p style="font-size: 1.2rem;">
-              # take a snapshot of the staging area
-              <br />
+              # take a snapshot of the staging area <br />
               git commit -m "add README to initial commit"
             </p>
             <p style="font-size: 1.2rem;">
-              # provide the path for the repository you created on github
-              <br />
+              # provide the path for the repository you created on github <br />
               git remote add origin https://github.com/USER/REPO.git
             </p>
             <p style="font-size: 1.2rem;">
-              # push changes to github
-              <br />
+              # push changes to github <br />
               git push --set-upstream origin my-branch
             </p>
           </div>

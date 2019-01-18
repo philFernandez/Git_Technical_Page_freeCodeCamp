@@ -83,6 +83,7 @@
     background-color: lightgrey;
     box-sizing: border-box;
     white-space: nowrap;
+    overflow-y: hidden;
     overflow-x: auto;
   }
   div.code-container p {
