@@ -33,9 +33,9 @@
   window.addEventListener("scroll", () => {
     // console.log(this.oldScroll < this.scrollY);
     if (this.oldScroll < this.scrollY) {
-      navBar.style.display = "flex";
+      navBar.style.display = "none";
     } else {
-      // navBar.style.display = "none";
+      navBar.style.display = "flex";
     }
 
     this.oldScroll = this.scrollY;
