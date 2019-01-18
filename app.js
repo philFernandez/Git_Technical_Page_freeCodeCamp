@@ -21,3 +21,15 @@ function expandHamburger(e) {
       "width: 97.5vw; height: 56rem; border: 0.5rem solid black;";
   }
 }
+
+let navigationBar = document.getElementById("navbar");
+function handleNav(e) {
+  if (navigationBar.style["display"] === "flex") {
+    navigationBar.style.display = "none";
+  } else {
+    navigationBar.style.display = "flex";
+  }
+  console.log(navigationBar.style["display"]);
+}
+
+window.addEventListener("click", handleNav);
