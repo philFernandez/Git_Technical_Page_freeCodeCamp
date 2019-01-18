@@ -36,6 +36,10 @@
     font-family: sans-serif;
   }
 
+  section {
+    margin-bottom: 4rem;
+  }
+
   #hamburger-container {
     padding-top: 2rem;
   }
