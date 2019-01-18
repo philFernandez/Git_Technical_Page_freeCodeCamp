@@ -31,10 +31,11 @@
 (function() {
   let navBar = document.getElementById("navbar");
   window.addEventListener("scroll", () => {
-    // console.log(this.oldScroll < this.scrollY);
+    // if scrolling down, hide the navbar
     if (this.oldScroll < this.scrollY) {
       navBar.style.display = "none";
     } else {
+      // if scrolling up, show the nav bar
       navBar.style.display = "flex";
     }
 
@@ -46,6 +47,7 @@
     link.addEventListener("click", hideNav);
   }
 
+  // hide the nav bar when selecting a link
   function hideNav() {
     setTimeout(function() {
       navBar.style.display = "none";
