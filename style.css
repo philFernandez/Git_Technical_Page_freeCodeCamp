@@ -86,11 +86,16 @@
     overflow-y: hidden;
     overflow-x: auto;
   }
-  div.code-container p {
-    /* margin: 0 auto;
-    width: 75%;
-    background-color: lightgrey;
-    box-sizing: border-box; */
-    /* overflow-x: scroll; */
+
+  div.code-container::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+  }
+
+  div.code-container::-webkit-scrollbar {
+    background-color: #e0e0e0;
+  }
+
+  div.code-container::-webkit-scrollbar-thumb {
+    background-color: grey;
   }
 }
