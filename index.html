@@ -315,7 +315,8 @@
               git checkout my-branch
             </p>
             <p>
-              # make changes (ex: edit file1.md and file2.md with editor) <br />
+              # make changes (ex: edit file1.md and file2.md with a text editor)
+              <br />
             </p>
             <p>
               # stage the changed files <br />
@@ -369,6 +370,45 @@
             <p>
               # push changes to github <br />
               git push --set-upstream origin my-branch
+            </p>
+          </div>
+        </code>
+        <h3>Example: contribute to an existing branch on GitHub</h3>
+        <code>
+          <div class="code-container">
+            <p>
+              # assumption: a project called repo already exists on the machine,
+              and a new branch has been pushed to GitHub.com since the last time
+              changes were made locally <br />
+            </p>
+            <p>
+              # change into the repo directory<br />
+              cd repo
+            </p>
+            <p>
+              # update all remote tracking branches, and the currently checked
+              out branch <br />
+              git pull
+            </p>
+            <p>
+              # change into the existing branch called feature-a <br />
+              git checkout feature-a
+            </p>
+            <p>
+              # make changes, for example, edit file1.md using the text editor
+              <br />
+            </p>
+            <p>
+              # stage the changed file <br />
+              git add file1.md
+            </p>
+            <p>
+              # take a snapshot of the staging area <br />
+              git commit -m "edit file1"
+            </p>
+            <p>
+              # push changes to github <br />
+              git push
             </p>
           </div>
         </code>
