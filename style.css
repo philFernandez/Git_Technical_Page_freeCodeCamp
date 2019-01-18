@@ -1,6 +1,7 @@
 @media screen and (max-width: 768px) {
   html {
     font-size: 10px;
+    margin-top: 5rem;
   }
 
   h1 {
@@ -60,7 +61,8 @@
     /* justify-content: space-between; */
     width: 100%;
     top: 0%;
-    background-color: bisque;
+    background-color: white;
+    opacity: 0.9;
   }
 
   header#nav-header {
@@ -68,13 +70,13 @@
     padding-right: 6.1rem;
   }
 
-  #mobile-header-line {
+  /* #mobile-header-line {
     position: fixed;
     width: 100%;
     height: 0.1rem;
     background-color: #707070;
     margin-top: 0.6rem;
-  }
+  } */
 
   #mobile-nav {
     /* styling for drop down */
@@ -112,6 +114,10 @@
     margin-top: 0;
     padding-top: 3.6rem;
   }
+
+  /* main#main-doc {
+    margin-top: 9rem;
+  } */
 
   div.code-container {
     padding-left: 1rem;
