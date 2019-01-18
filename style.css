@@ -128,4 +128,16 @@
   div.code-container p {
     font-size: 1.2rem;
   }
+  footer {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+
+  name {
+    font-family: "Courier New", Courier, monospace;
+  }
 }
