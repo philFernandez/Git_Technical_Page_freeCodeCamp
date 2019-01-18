@@ -92,6 +92,7 @@
   }
 
   div.code-container::-webkit-scrollbar {
+    width: 10px;
     background-color: #e0e0e0;
   }
 
