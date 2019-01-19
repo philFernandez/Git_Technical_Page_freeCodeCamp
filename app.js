@@ -34,15 +34,18 @@
 (function() {
   let navBar = document.getElementById("navbar");
   window.addEventListener("scroll", () => {
-    // if scrolling down, hide the navbar
-    if (this.oldScroll < this.scrollY) {
-      navBar.style.display = "none";
-    } else {
-      // if scrolling up, show the nav bar
-      navBar.style.display = "flex";
-    }
+    let viewPortWidth = window.innerWidth;
+    if (viewPortWidth <= 768) {
+      // if scrolling down, hide the navbar
+      if (this.oldScroll < this.scrollY) {
+        navBar.style.display = "none";
+      } else {
+        // if scrolling up, show the nav bar
+        navBar.style.display = "flex";
+      }
 
-    this.oldScroll = this.scrollY;
+      this.oldScroll = this.scrollY;
+    }
   });
 
   let links = document.getElementsByClassName("nav-link");
@@ -52,8 +55,11 @@
 
   // hide the nav bar when selecting a link
   function hideNav() {
-    setTimeout(function() {
-      navBar.style.display = "none";
-    }, 60);
+    let viewPortWidth = window.innerWidth;
+    if (viewPortWidth <= 768) {
+      setTimeout(function() {
+        navBar.style.display = "none";
+      }, 60);
+    }
   }
 })();
