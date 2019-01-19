@@ -10,6 +10,10 @@ body {
 
 // desktop
 @media screen and (min-width: 769px) {
+  #mobile-nav {
+    display: none;
+  }
+
   h1 {
     font-size: 32px;
   }
@@ -48,6 +52,10 @@ body {
 
 // mobile
 @media screen and (max-width: 768px) {
+  #pc-nav {
+    display: none;
+  }
+
   html {
     font-size: 10px;
     margin-top: 5rem;
