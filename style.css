@@ -1,3 +1,23 @@
+body {
+  margin: 0;
+  /* margin: 0.8rem 0 0 0; */
+  font-family: sans-serif; }
+
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 36px; }
+  h2 {
+    font-size: 24px; }
+  h3 {
+    font-size: 18px; }
+  p,
+  li {
+    font-size: 16px; }
+  #navbar {
+    position: fixed;
+    width: 25vw;
+    height: 100vh; } }
+
 @media screen and (max-width: 768px) {
   html {
     font-size: 10px;
@@ -18,10 +38,6 @@
   li {
     font-size: 1.4rem;
     line-height: 1.6; }
-  body {
-    margin: 0;
-    /* margin: 0.8rem 0 0 0; */
-    font-family: sans-serif; }
   section {
     padding-right: 1.4rem;
     padding-left: 1.4rem;

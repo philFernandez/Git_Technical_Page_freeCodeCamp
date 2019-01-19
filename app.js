@@ -4,26 +4,29 @@
   navbar.addEventListener("click", expandHamburger);
 
   function expandHamburger() {
-    // get the div which hold the links
-    let mobileNav = document.getElementById("mobile-nav");
-    // get the links themselves
-    // let links = document.getElementsByTagName("a");
-    let links = document.getElementsByClassName("nav-link");
+    let viewPortWidth = window.innerWidth;
+    if (viewPortWidth <= 768) {
+      // get the div which hold the links
+      let mobileNav = document.getElementById("mobile-nav");
+      // get the links themselves
+      // let links = document.getElementsByTagName("a");
+      let links = document.getElementsByClassName("nav-link");
 
-    // if the navigation menu is already being shown, then hide it
-    if (mobileNav.style.width == "97.5vw") {
-      for (let link of links) {
-        link.style.display = "none";
-      }
-      mobileNav.style.cssText = "width: 0; height: 0; border: 0";
+      // if the navigation menu is already being shown, then hide it
+      if (mobileNav.style.width == "97.5vw") {
+        for (let link of links) {
+          link.style.display = "none";
+        }
+        mobileNav.style.cssText = "width: 0; height: 0; border: 0";
 
-      // else if the navigation menu is hidden then show it
-    } else {
-      for (let link of links) {
-        link.style.display = "block";
+        // else if the navigation menu is hidden then show it
+      } else {
+        for (let link of links) {
+          link.style.display = "block";
+        }
+        mobileNav.style.cssText =
+          "width: 97.5vw; height: 56rem; border: 0.5rem solid black;";
       }
-      mobileNav.style.cssText =
-        "width: 97.5vw; height: 56rem; border: 0.5rem solid black;";
     }
   }
 })();
