@@ -1,5 +1,6 @@
 $nav_background: linear-gradient(skyblue, lightgrey);
 $nav_text: black;
+$link_color: #3f7bbf;
 
 // common between mobile and desktop
 body {
@@ -9,7 +10,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: #3f7bbf;
+  color: $link_color;
 }
 
 // desktop
@@ -159,7 +160,7 @@ a {
   }
 
   a:visited {
-    color: $nav_text;
+    color: $link_color;
   }
 
   a.nav-link {
