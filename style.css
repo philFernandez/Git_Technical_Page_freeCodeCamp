@@ -41,7 +41,8 @@
     top: 0%;
     background-image: linear-gradient(skyblue, lightgrey);
     color: black;
-    border-bottom: 1px solid lightgrey; }
+    border-bottom: 1px solid lightgrey;
+    transition: height 0.1s; }
   header#nav-header {
     margin: auto;
     padding-right: 6.1rem; }
@@ -56,7 +57,7 @@
     width: 0;
     height: 0;
     text-align: center;
-    transition: all 0.1s; }
+    transition: width 0.2s; }
   a {
     text-decoration: none;
     color: #3f7bbf; }
