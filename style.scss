@@ -43,6 +43,7 @@ a {
     background-color: white;
     width: 300px;
     height: 100vh;
+    overflow: auto;
   }
 
   header#pc-nav-header {
@@ -55,7 +56,10 @@ a {
   }
 
   a.pc-nav-link {
+    // margin-top: 12px;
+    // margin-bottom: 12px;
     font-size: 14px;
+    line-height: 5;
     display: block;
   }
 
