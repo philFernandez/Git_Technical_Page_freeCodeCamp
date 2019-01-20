@@ -8,7 +8,7 @@
     <title>Git Technical</title>
   </head>
   <body>
-    <!-- start of nav ----------------------------------------------- -->
+    <!-- start mobile navbar -->
     <nav id="navbar">
       <div id="hamburger-container">
         <div class="hamburger-item"></div> <div class="hamburger-item"></div>
@@ -56,6 +56,14 @@
           >Models for collaborative development</a
         >
       </div>
+    </nav>
+
+    <!-- the only way I could figure out how to have the mobile nav and desktop both
+    without breaking, was to duplicate some of the markup and use sepatate id names -->
+
+    <!-- start navbar for desktop/pc -->
+    <nav id="pc-navbar">
+      <header id="pc-nav-header"><h1>Git Documentation</h1></header>
       <div id="pc-nav">
         <a
           class="pc-nav-link"
@@ -101,8 +109,8 @@
         >
       </div>
     </nav>
-    <!-- <div id="mobile-header-line"></div> -->
-    <!-- end of nav ----------------------------------------------- -->
+
+    <!-- end of pc-nav ----------------------------------------------- -->
     <main id="main-doc">
       <section class="main-section" id="what's_a_version_control_system?">
         <header><h2>What's a version control system?</h2></header>

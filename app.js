@@ -5,6 +5,7 @@
 
   function expandHamburger() {
     let viewPortWidth = window.innerWidth;
+    // make sure we are in mobile mode before doing any of the mobile nav things
     if (viewPortWidth <= 768) {
       // get the div which hold the links
       let mobileNav = document.getElementById("mobile-nav");
@@ -31,10 +32,12 @@
   }
 })();
 
+// hide nav when scolling down; show nav when scolling up
 (function() {
   let navBar = document.getElementById("navbar");
   window.addEventListener("scroll", () => {
     let viewPortWidth = window.innerWidth;
+    // make sure we are in mobile mode before doing any of the mobile nav things
     if (viewPortWidth <= 768) {
       // if scrolling down, hide the navbar
       if (this.oldScroll < this.scrollY) {
