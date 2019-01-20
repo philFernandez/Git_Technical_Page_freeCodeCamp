@@ -44,7 +44,8 @@ a {
   a.pc-nav-link:last-child {
     border-bottom: 1px solid black; }
   #main-doc {
-    padding-left: 350px; }
+    padding-left: 350px;
+    padding-right: 40px; }
   footer {
     margin: 0 auto;
     padding-left: 302px;
