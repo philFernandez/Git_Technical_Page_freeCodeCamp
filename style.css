@@ -18,7 +18,11 @@ a {
     font-size: 18px; }
   p,
   li {
-    font-size: 16px; }
+    font-size: 16px;
+    line-height: 1.9; }
+  li {
+    margin-top: 8px;
+    margin-bottom: 8px; }
   #pc-navbar {
     position: fixed;
     top: 0%;
