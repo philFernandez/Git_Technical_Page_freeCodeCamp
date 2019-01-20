@@ -30,12 +30,15 @@ a {
   header#pc-nav-header {
     padding-left: 15px; }
   div#pc-nav {
-    margin: 0 auto;
-    padding-left: 15px; }
+    margin: 0 auto; }
   a.pc-nav-link {
+    border-top: 1px solid black;
     font-size: 14px;
     line-height: 5;
-    display: block; }
+    display: block;
+    padding-left: 15px; }
+  a.pc-nav-link:last-child {
+    border-bottom: 1px solid black; }
   #main-doc {
     padding-left: 350px; }
   footer {
