@@ -38,9 +38,8 @@ a {
 
   #pc-navbar {
     position: fixed;
-    display: block;
     top: 0%;
-    border: 1px solid black;
+    border-right: 2px solid lightgrey;
     background-color: white;
     width: 300px;
     height: 100vh;
@@ -135,7 +134,7 @@ a {
     // background-color: $nav_background;
     background-image: $nav_background;
     color: $nav_text;
-    border-bottom: 1px solid lightgrey;
+    // border-bottom: 1px solid lightgrey;
     transition: height 0.1s;
   }
 
