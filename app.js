@@ -68,10 +68,11 @@
 // the nav's display property is set to flex. Else if we
 // are in desktop mode ie > 768px wide, the nav's display
 // property is in block
+
 (function() {
   let navBar = document.getElementById("navbar");
   window.addEventListener("resize", e => {
-    if (e.target.innerWidth > 768) {
+    if (e.target.innerWidth >= 768) {
       navBar.style.display = "block";
     } else {
       navBar.style.display = "flex";
