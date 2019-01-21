@@ -89,6 +89,8 @@
     if (e.target.innerWidth > 768) {
       mobileNav.style.display = "none";
       navbar.style.display = "none";
+    } else {
+      navbar.style.display = "flex";
     }
   }
 })();
