@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  /* margin: 0.8rem 0 0 0; */
   font-family: sans-serif; }
 
 a {
@@ -111,7 +110,6 @@ div.code-container::-webkit-scrollbar-thumb {
   #navbar {
     position: fixed;
     display: flex;
-    /* justify-content: space-between; */
     width: 100%;
     top: 0%;
     background-image: linear-gradient(skyblue, lightgrey);
@@ -144,9 +142,6 @@ div.code-container::-webkit-scrollbar-thumb {
   a.nav-link:nth-child(1) {
     margin-top: 0;
     padding-top: 3.6rem; }
-  /* main#main-doc {
-    margin-top: 9rem;
-  } */
   div.code-container p {
     font-size: 1.2rem; }
   footer {
