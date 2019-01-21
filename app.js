@@ -14,7 +14,8 @@
       let links = document.getElementsByClassName("nav-link");
 
       // if the navigation menu is already being shown, then hide it
-      if (mobileNav.style.width == "97.5vw") {
+      let mobileNavWidth = "100vw"; // this is the width of the dropdown mobile nav
+      if (mobileNav.style.width == mobileNavWidth) {
         for (let link of links) {
           link.style.display = "none";
         }
@@ -25,8 +26,11 @@
         for (let link of links) {
           link.style.display = "block";
         }
+
         mobileNav.style.cssText =
-          "width: 97.5vw; height: 56rem; border: 0.5rem solid black;";
+          "width: " +
+          mobileNavWidth +
+          "; height: 56rem; border-bottom: 0.2rem solid lightgrey;";
       }
     }
   }

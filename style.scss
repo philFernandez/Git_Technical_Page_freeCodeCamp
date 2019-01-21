@@ -187,14 +187,12 @@ div.code-container::-webkit-scrollbar-thumb {
     /* styling for drop down */
     position: fixed;
     top: -0.1rem;
-    // background-image: $nav_background;
     background-color: white;
-    border-bottom-left-radius: 1.2rem;
-    border-bottom-right-radius: 1.2rem;
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
     margin: 0 auto;
     width: 0;
     height: 0;
-    text-align: center;
     transition: width 0.2s;
   }
 
@@ -203,11 +201,12 @@ div.code-container::-webkit-scrollbar-thumb {
   }
 
   a.nav-link {
+    border-top: 1px solid black;
     display: none;
-    // color: $nav_text;
     text-decoration: none;
     font-size: 1.6rem;
-    margin: 3.6rem 0 3.6rem 0;
+    padding-left: 1.5rem;
+    line-height: 3;
     -webkit-tap-highlight-color: green;
   }
 
