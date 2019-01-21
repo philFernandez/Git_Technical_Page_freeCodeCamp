@@ -30,6 +30,13 @@ div.code-container::-webkit-scrollbar-thumb {
   background-color: lightgrey;
   border-radius: 0.3rem; }
 
+footer {
+  margin: 0 auto;
+  text-align: center; }
+
+name {
+  font-family: "Courier New", Courier, monospace; }
+
 @media screen and (min-width: 769px) {
   #navbar {
     display: none; }
@@ -70,9 +77,9 @@ div.code-container::-webkit-scrollbar-thumb {
     padding-left: 350px;
     padding-right: 40px; }
   footer {
-    margin: 0 auto;
-    padding-left: 302px;
-    text-align: center; } }
+    padding-left: 302px; }
+  footer p {
+    font-size: 10px; } }
 
 @media screen and (max-width: 768px) {
   #pc-navbar {
@@ -145,10 +152,5 @@ div.code-container::-webkit-scrollbar-thumb {
     padding-top: 3.6rem; }
   div.code-container p {
     font-size: 1.2rem; }
-  footer {
-    margin: 0 auto;
-    text-align: center; }
   footer p {
-    font-size: 0.9rem; }
-  name {
-    font-family: "Courier New", Courier, monospace; } }
+    font-size: 0.9rem; } }
