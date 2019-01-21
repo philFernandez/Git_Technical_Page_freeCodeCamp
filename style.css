@@ -112,7 +112,8 @@ div.code-container::-webkit-scrollbar-thumb {
     display: flex;
     width: 100%;
     top: 0%;
-    background-image: linear-gradient(skyblue, lightgrey);
+    background-color: white;
+    border-bottom: 0.2rem solid lightgrey;
     color: black;
     transition: height 0.1s; }
   header#nav-header {
