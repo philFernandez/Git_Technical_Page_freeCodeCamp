@@ -60,9 +60,35 @@
   function hideNav() {
     let viewPortWidth = window.innerWidth;
     if (viewPortWidth <= 768) {
-      setTimeout(function() {
+      setTimeout(() => {
         navBar.style.display = "none";
       }, 60);
+    }
+  }
+})();
+
+// resize listener with throttling built in
+(function() {
+  let mobileNav = document.getElementById("mobile-nav");
+  let navbar = document.getElementById("navbar");
+  window.addEventListener("resize", resizeThrottler, false);
+
+  var resizeTimeout;
+  function resizeThrottler(e) {
+    // ignore events as long as an actualResizeHandler execution is in the queue
+    if (!resizeTimeout) {
+      resizeTimeout = setTimeout(() => {
+        resizeTimeout = null;
+        actualResizeHandler(e);
+      }, 66);
+    }
+  }
+
+  // this is where you do the things
+  function actualResizeHandler(e) {
+    if (e.target.innerWidth > 768) {
+      mobileNav.style.display = "none";
+      navbar.style.display = "none";
     }
   }
 })();
