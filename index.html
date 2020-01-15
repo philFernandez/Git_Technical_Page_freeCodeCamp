@@ -8,7 +8,7 @@
     <title>Git Technical</title>
   </head>
   <body>
-    <!-- start of nav ----------------------------------------------- -->
+    <!-- start mobile navbar -->
     <nav id="navbar">
       <div id="hamburger-container">
         <div class="hamburger-item"></div> <div class="hamburger-item"></div>
@@ -57,8 +57,62 @@
         >
       </div>
     </nav>
-    <!-- <div id="mobile-header-line"></div> -->
-    <!-- end of nav ----------------------------------------------- -->
+
+    <!-- the only way I could figure out how to have the mobile nav and desktop both
+    without breaking, was to duplicate some of the markup and use sepatate id names -->
+
+    <!-- start navbar for desktop/pc -->
+    <nav id="pc-navbar">
+      <header id="pc-nav-header"><h1>Git Documentation</h1></header>
+      <div id="pc-nav">
+        <a
+          class="pc-nav-link"
+          href="#what's_a_version_control_system?"
+          rel="internal"
+        >
+          What's a version control system?
+        </a>
+        <a
+          class="pc-nav-link"
+          href="#what's_a_distributed_version_control_system?"
+          rel="internal"
+        >
+          What's a distributed version control system?
+        </a>
+        <a class="pc-nav-link" href="#why_git?" rel="internal">Why Git?</a>
+        <a class="pc-nav-link" href="#what's_a_repository?" rel="internal"
+          >What's a repository?</a
+        >
+        <a class="pc-nav-link" href="#basic_git_commands" rel="internal"
+          >Basic Git commands</a
+        >
+        <a class="pc-nav-link" href="#how_github_fits_in" rel="internal"
+          >How GitHub fits in</a
+        >
+        <a class="pc-nav-link" href="#how_github_works" rel="internal"
+          >How GitHub works</a
+        >
+        <a class="pc-nav-link" href="#the_github_flow" rel="internal"
+          >The GitHub flow</a
+        >
+        <a
+          class="pc-nav-link"
+          href="#github_and_the_command_line"
+          rel="internal"
+          >GitHub and the command line</a
+        >
+        <a
+          class="pc-nav-link"
+          href="#models_for_collaborative_development"
+          rel="internal"
+          >Models for collaborative development</a
+        >
+      </div>
+    </nav>
+
+    <!--end of pc-nav-->
+
+
     <main id="main-doc">
       <section class="main-section" id="what's_a_version_control_system?">
         <header><h2>What's a version control system?</h2></header>
